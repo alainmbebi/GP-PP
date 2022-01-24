@@ -20,17 +20,15 @@ R functions to implement the comparative analysis of genomic and phenomic predic
 
   * CV_MOR.R selects the tuning parameters for MOR.R using K-folds CV
 
-2. The folder data contains data sets used in the comparative analysis. Files are to be read as in the examples below:
+2. The folder data contains data sets for the H1xG and H1xET47 families used in the comparative analysis. 
 
-  * listX_n50p100s30rho.1 (list of the predictor matrices X for all 20 replicates, with n=50, p=100, s=30 and the AR(1) parameter ![equation](https://latex.codecogs.com/gif.latex?%5Crho%3D1))
+  * H1xET47_coffeetraits_Step234.csv and H1xG_coffeetraits_Step234.csv contain leaf count (LC), tree height (TH) and trunk diameter (TD) measurements for step2 (i.e. 2 months growth under full and altitude level 600m), step3 (i.e. 2.5 months growth under shade and altitude level 600m) and step4 (i.e. 2 months growth under full sun and altitude level 1300m) for H1xET47 and H1xG families respectively.
+  * H1xET47_coffeetraits_Step234.csv
+  * H1xET47_coffeetraits_Step234.csv
+  * H1xET47_coffeetraits_Step234.csv
+  * H1xET47_coffeetraits_Step234.csv
 
-  * listY_n50p100s30rho.1  (list of the response matrices Y for all 20 replicates, with n=50, p=100, s=30 and the AR(1) parameter ![equation](https://latex.codecogs.com/gif.latex?%5Crho%3D1))
-
-  * trueB_n50p100s30rho.9 (list of the true regression coefficient matrices B for all 20 replicates, with n=50, p=100, s=30 and the AR(1) parameter ![equation](https://latex.codecogs.com/gif.latex?%5Crho%3D1))
-
-3. The folder data contains Brassica napus and wheat data sets from [MTGS](https://CRAN.R-project.org/package=MTGS) and [BLRG](https://CRAN.R-project.org/package=BGLR ) packages respectively.
-
-4. The file Example_run.R is an implementation example of all models/functions previously discussed, using simulated data set. 
+3. The file Example_run.R is an implementation example of all models/functions previously discussed, using simulated data set. 
 
 5. Notes
   * The MTGS.mlasso function is called from [MTGS R package](https://CRAN.R-project.org/package=MTGS) and compute the GEBVs using multivariate LASSO 
