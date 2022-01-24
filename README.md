@@ -16,7 +16,7 @@ R functions to implement the comparative analysis of genomic and phenomic predic
 
 3. Notes
 
-  * By default, all cross-validation scripts use 3-folds
+  * By default, all cross-validation scripts use 3-folds 
 
   * Although the codes here were tested on Fedora 29 (Workstation Edition) using R (version 3.6.1), they can run under any Linux or Windows OS distributions, as long as all the required packages are compatible with the desired R version.
 
