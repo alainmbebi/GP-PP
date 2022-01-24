@@ -1,2 +1,2 @@
 # GP_vs_PP
-Comparative analysis between GP and PP for 3WH coffee traits
+A comparative analysis of genomic and phenomic predictions of growth-related traits in three-way coffee hybrids
