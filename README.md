@@ -23,12 +23,11 @@ R functions to implement the comparative analysis of genomic and phenomic predic
 2. The folder data contains data sets for the H1xG and H1xET47 families used in the comparative analysis. 
 
   * H1xET47_coffeetraits_Step234.csv and H1xG_coffeetraits_Step234.csv contain measurements for the analysed coffee traits (i.e. LC, TH and TD) over step2, step3 and step4 for H1xET47 and H1xG families respectively.
-  * H1xET47_coffeetraits_Step234.csv
-  * H1xET47_Phenomic_Step234.csv and H1xG_Phenomic_Step234.csv represent phenomic (chlorophyll a fluorescence) measurements over step2, step3 and step4 for H1xET47 and H1xG families respectively
-  * FinalSNP_H1xET47_impute_mean.csv and FinalSNP_H1xG_impute_mean.csv are SNP data for H1xET47 and H1xG families respectively.
-  * 
+  * H1xET47_Phenomic_Step234.csv and H1xG_Phenomic_Step234.csv contain phenomic (chlorophyll a fluorescence) measurements over step2, step3 and step4 for H1xET47 and H1xG families respectively
+  * FinalSNP_H1xET47_impute_mean.csv and FinalSNP_H1xG_impute_mean.csv are SNP data for H1xET47 and H1xG families respectively
+  * nugen_spet-gatk_haplotypecaller_SNP.vcf.gz.tbi file that is included for completeness, contains raw SNP data for the two families
 
-3. The file Example_run.R is an implementation example of all models/functions previously discussed, using simulated data set. 
+3. The file Example_run.R is an implementation example of all models/functions previously discussed, using simulated data set
 
 5. Notes
   * The MTGS.mlasso function is called from [MTGS R package](https://CRAN.R-project.org/package=MTGS) and compute the GEBVs using multivariate LASSO 
@@ -41,7 +40,7 @@ R functions to implement the comparative analysis of genomic and phenomic predic
 
   * Although the codes here were tested on Fedora 29 (Workstation Edition) using R (version 3.6.1), they can run under any Linux or Windows OS distributions, as long as all the required packages are compatible with the desired R version.
 
-  * The following abbreviations are used, LC:  leaf count, TH: tree height, TD: trunk diameter, GP: genomic prediction. PP: phenomic prediction, L21-joint:  equation-norm regularized multivariate regression, RR: ridge regression , mLASSO: multiple LASSO, EN: elastic-net, BL: Bayesian LASSO, GBLUP: Genomic Best Linear Unbiased Prediction and mBayesB: multiple-trait BayesB.
+  * The following abbreviations are used, LC: leaf count, TH: tree height, TD: trunk diameter, GP: genomic prediction. PP: phenomic prediction, L21-joint:  equation-norm regularized multivariate regression, RR: ridge regression , mLASSO: multiple LASSO, EN: elastic-net, BL: Bayesian LASSO, GBLUP: Genomic Best Linear Unbiased Prediction and mBayesB: multiple-trait BayesB.
   * Step2, step3 and step4 correspond respectively to: 2 months growth under full sun altitude level 600m, 2.5 months growth under shade altitude level 600m and 2 months growth under full sun and altitude level 1300m.
 
 
