@@ -1,7 +1,6 @@
 # GP_vs_PP
-A comparative analysis of genomic and phenomic predictions of growth-related traits in three-way coffee hybrids
 
-R functions to implement genotype-phenotype association and genomic prediction using ![equation](https://latex.codecogs.com/gif.latex?%5Ctext%7BL%7D_%7B21%7D)-norm regularized multivariate regression, as described in [(A. Mbebi et al. 2022)]().
+R functions to implement the comparative analysis of genomic and phenomic predictions of growth-related traits in three-way coffee hybrids, as described in [(A. Mbebi et al. 2022)]().
 
 1. The folder code contains the following R scripts:
 
