@@ -8,7 +8,6 @@ library(MASS)
 library(corpcor)
 library(Matrix)          
 library(lattice)
-library(mvtnorm)
 library(glasso)          
 library(glassoFast)
 library(matrixcalc)
@@ -18,18 +17,6 @@ library(BGLR)
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # '@functions
-#function to center data matrices using 'colMeans()' note that we center the col because they represent variables
-center_colmeans <- function(x) {
-  xcenter = colMeans(x)
-  x - rep(xcenter, rep.int(nrow(x), ncol(x)))
-}
-
-#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#function to compute the L2-norm of a given vector x
-L2norm <- function(x) {
-  sqrt(crossprod(x))
-}
-
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #function for the estimation in mutiple ridge for B
@@ -661,14 +648,11 @@ CV_joint<-function(lambdaO, lambdaB, X, Y, kfold=3) {
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 #@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-itermax=2
+itermax=40
 eps=10^-5  		  # treshold for convergence 
 
 Y<-as.matrix(read.csv("H1xET47_coffeetraits_Step234.csv", head=TRUE, row.names = 1, sep=",")) 
 X<-t(as.matrix(read.csv("FinalSNP_H1xET47_impute_mean.csv", head=TRUE, row.names = 1, sep=",")))
-
-Y = scale(Y, scale = TRUE)
-X = scale(X, scale = FALSE)
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #Compare 1 ridge regression with CV using glmnet package
