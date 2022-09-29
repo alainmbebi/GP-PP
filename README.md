@@ -1,6 +1,6 @@
 # GP_vs_PP
 
-R functions to implement the comparative analysis of genomic and phenomic predictions of growth-related traits in three-way coffee hybrids, as described in [( Mbebi A. et al. 2022)]().
+R functions to implement the comparative analysis of genomic and phenomic predictions of growth-related traits in three-way coffee hybrids, as described in [( Mbebi A. et al. 2022)]( https://doi.org/10.1093/g3journal/jkac170).
 
 1. The folder code contains the R script H1xET47_GP_step234.R in which one can find function for parameters estimation and K-folds cross-validation for all seven statistcal models used in the comparative analysis. This is provided as an example for H1xET47 family only because the results for H1xG family can be obtained by replacing traits and SNP data for H1xET47 with those of H1xG. The same script is used for phenomic prediction, using the Chlorophyll a fluorescence measurements for the corresponding population instead of SNP (except for GBLUP that is not considered for PP).
 
